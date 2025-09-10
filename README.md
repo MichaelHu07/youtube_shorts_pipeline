@@ -97,7 +97,10 @@ youtube_shorts_pipeline/
 
 <img width="3024" height="4032" alt="image" src="https://github.com/user-attachments/assets/2c972a12-1215-46de-84ac-e49bfc61f6f0" />
 
+<img width="1320" height="2304" alt="image" src="https://github.com/user-attachments/assets/c05b25eb-0692-4661-bbcb-d6ae77f7e2c2" />
+
+
 Uploaded videos generated using youtube_shorts_pipeline
 Utilized No-Copyright Minecraft parkour footage as B-roll
-
+Average view count of 700 Across 30+ Videos
 
