@@ -92,3 +92,12 @@ youtube_shorts_pipeline/
 ---
 
 **Note**: This pipeline generates videos ready for manual upload to any platform. 
+
+# Field Testing:
+
+<img width="3024" height="4032" alt="image" src="https://github.com/user-attachments/assets/2c972a12-1215-46de-84ac-e49bfc61f6f0" />
+
+Uploaded videos generated using youtube_shorts_pipeline
+Utilized No-Copyright Minecraft parkour footage as B-roll
+
+
