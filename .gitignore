@@ -1,0 +1,59 @@
+# Environment variables
+.env
+config/client_secrets.json
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+data/audio/*.mp3
+data/reddit_posts/*.json
+data/reddit_posts/*.txt
+data/subtitles/*.json
+data/subtitles/*.srt
+output/final_videos/*.mp4
+logs/*.log
+
+# Keep directory structure but ignore contents
+!data/audio/.gitkeep
+!data/reddit_posts/.gitkeep
+!data/subtitles/.gitkeep
+!data/videos/.gitkeep
+!output/final_videos/.gitkeep
+!logs/.gitkeep
