@@ -1,15 +1,16 @@
 # Short-Form Video Pipeline
 
-A streamlined content creation pipeline that generates short-form vertical videos from Reddit posts using AI narration and background videos.
+A content creation pipeline that generates short-form vertical videos from Reddit posts using AI narration, Subtitle Generation, and background videos.
 
-## What It Does
+# Feature List: 
 
 1. **Fetches engaging Reddit posts** from your target subreddit
 2. **Generates AI narration** using ElevenLabs text-to-speech
 3. **Combines with background video** from your uploaded collection
-4. **Creates vertical short-form format** (1080x1920) videos ready for upload
+4. **Burns Auto-Generated subtitles onto background video** using OpenAI Whisper
+5. **Generates vertical short-form format** (1080x1920) videos ready for upload
 
-## Quick Start
+## Setup
 
 ### 1. Install Dependencies
 ```bash
@@ -17,7 +18,7 @@ pip install -r requirements.txt
 ```
 
 ### 2. Configure API Keys
-Copy `config.env.example` to `.env` and add your API keys:
+add your API keys in config.env:
 ```bash
 REDDIT_CLIENT_ID=your_reddit_client_id
 REDDIT_CLIENT_SECRET=your_reddit_client_secret
@@ -26,7 +27,7 @@ ELEVENLABS_VOICE_ID=your_voice_id
 ```
 
 ### 3. Add Background Videos
-Place your background videos (MP4, MOV, AVI, MKV) in the `data/videos/` folder.
+Place background videos in the `data/videos/` folder.
 
 ### 4. Run the Pipeline
 ```bash
