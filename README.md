@@ -75,13 +75,11 @@ youtube_shorts_pipeline/
 └── main.py                 # Pipeline entry point
 ```
 
-## Features
+## Config Features
 
 - **Smart Reddit filtering** (upvotes, length, duration)
 - **Random post selection** from top posts for variety
 - **Configurable voice settings** for optimal narration
-- **Automatic file cleanup** to manage storage
-- **Comprehensive logging** for debugging
 - **Configuration validation** to prevent errors
 
 ## Requirements
