@@ -37,7 +37,7 @@ Drop background videos in `data/videos/` folder.
 
 ### 4. Run the Pipeline
 
-run '''main.py'''
+run `main.py`
 
 ## Configuration
 
