@@ -13,67 +13,49 @@ A content creation pipeline that generates short-form vertical videos from Reddi
 ## Setup
 
 ### 1. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
+- praw 7.7.1+
+- elevenlabs 0.2.26+
+- moviepy 1.0.3+
+- openai-whisper 20231117+
+- Pillow 10.1.0+
+- requests 2.31.0+
+- python-dotenv 1.0.0+
+- opencv-python 4.8.1.78+
+- numpy 1.24.3+
+- ffmpeg-python 0.2.0+
+- Python 3.8+ 
 
 ### 2. Configure API Keys
+
 add your API keys in config.env:
-```bash
-REDDIT_CLIENT_ID=your_reddit_client_id
-REDDIT_CLIENT_SECRET=your_reddit_client_secret
-ELEVENLABS_API_KEY=your_elevenlabs_api_key
-ELEVENLABS_VOICE_ID=your_voice_id
-```
+#### Required API Keys:
+- Reddit API account
+- ElevenLabs API account 
 
 ### 3. Add Background Videos
-Place background videos in the `data/videos/` folder.
+Drop background videos in `data/videos/` folder.
 
 ### 4. Run the Pipeline
-```bash
-python main.py
-```
+
+run '''main.py'''
 
 ## Configuration
 
 Adjust pipeline behavior by editing `config/pipeline_config.py`:
 
-```python
-# Content filtering
+#### Content filtering
 MIN_UPVOTES = 100              # Minimum post upvotes
 MIN_POST_LENGTH = 300          # Minimum post length
 TIME_FILTER = 'year'           # Reddit time filter
 
-# Video quality
+#### Video quality
 OUTPUT_WIDTH = 1080            # Video width
 OUTPUT_HEIGHT = 1920           # Video height (vertical format)
 VIDEO_FPS = 30                 # Frames per second
 
-# Voice settings
+#### Voice settings
 VOICE_STABILITY = 0.5          # Voice stability (0.0-1.0)
 VOICE_SIMILARITY_BOOST = 0.75  # Voice similarity (0.0-1.0)
-```
-
-## Project Structure
-
-```
-youtube_shorts_pipeline/
-├── config/
-│   ├── pipeline_config.py     # Main configuration file
-│   └── settings.py           # Environment settings
-├── data/
-│   ├── videos/              # Add your background videos here
-│   ├── audio/              # Generated narration files
-│   └── reddit_posts/       # Fetched post data
-├── output/
-│   └── final_videos/       # Generated short-form videos
-├── src/
-│   ├── reddit_fetcher/     # Reddit API integration
-│   ├── speech_synthesis/   # ElevenLabs TTS
-│   ├── video_downloader/   # Video file management
-│   └── video_editor/       # Video composition
-└── main.py                 # Pipeline entry point
-```
 
 ## Config Features
 
@@ -82,16 +64,7 @@ youtube_shorts_pipeline/
 - **Configurable voice settings** for optimal narration
 - **Configuration validation** to prevent errors
 
-## Requirements
-
-- Python 3.8+
-- Reddit API account
-- ElevenLabs API account  
-- Background videos in `data/videos/` folder
-
 ---
-
-**Note**: This pipeline generates videos ready for manual upload to any platform. 
 
 # Field Testing:
 
@@ -100,7 +73,7 @@ youtube_shorts_pipeline/
 <img width="1320" height="2304" alt="image" src="https://github.com/user-attachments/assets/c05b25eb-0692-4661-bbcb-d6ae77f7e2c2" />
 
 
-Uploaded videos generated using youtube_shorts_pipeline
-Utilized No-Copyright Minecraft parkour footage as B-roll
-Average view count of 700 Across 30+ Videos
+- Uploaded videos generated using youtube_shorts_pipeline
+- No-Copyright Minecraft parkour footage as B-roll
+- Average view count of 700 Across 30+ Videos
 
