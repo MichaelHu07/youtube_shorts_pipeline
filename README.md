@@ -27,7 +27,8 @@ A content creation pipeline that generates short-form vertical videos from Reddi
 
 ### 2. Configure API Keys
 
-add your API keys in config.env:
+Add your API keys in `config.env`:
+
 #### Required API Keys:
 - Reddit API account
 - ElevenLabs API account 
@@ -44,18 +45,18 @@ run `main.py`
 Adjust pipeline behavior by editing `config/pipeline_config.py`:
 
 #### Content filtering
-MIN_UPVOTES = 100              # Minimum post upvotes
-MIN_POST_LENGTH = 300          # Minimum post length
-TIME_FILTER = 'year'           # Reddit time filter
+MIN_UPVOTES: Minimum post upvotes
+MIN_POST_LENGTH: Minimum post length
+TIME_FILTER: Reddit time filter
 
 #### Video quality
-OUTPUT_WIDTH = 1080            # Video width
-OUTPUT_HEIGHT = 1920           # Video height (vertical format)
-VIDEO_FPS = 30                 # Frames per second
+OUTPUT_WIDTH: Video width
+OUTPUT_HEIGHT: Video height (vertical format)
+VIDEO_FPS: Frames per second 
 
 #### Voice settings
-VOICE_STABILITY = 0.5          # Voice stability (0.0-1.0)
-VOICE_SIMILARITY_BOOST = 0.75  # Voice similarity (0.0-1.0)
+VOICE_STABILITY: Range (0.0-1.0)
+VOICE_SIMILARITY_BOOST: Range (0.0-1.0)
 
 ## Config Features
 
